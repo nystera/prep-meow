@@ -8,6 +8,7 @@
   import { trapFocus } from '$lib/utils/index';
 
   import CloseIcon from '~icons/mdi/close';
+  import HomeIcon from '~icons/teenyicons/home-outline';
 
   export let show = false;
 
@@ -30,9 +31,9 @@
 
 {#if show}
   <nav
-    class="fixed top-0 left-0 h-full w-1/2 z-10 bg-surface
+    class="fixed top-0 left-0 h-full w-2/3 z-10 bg-surface
     shadow-2xl shadow-primary border-y-2 border-r-2 rounded-r-2xl border-primary
-    flex flex-col pt-5"
+    flex flex-col py-8 overflow-y-scroll scrollbar-hide"
     use:trapFocus
     transition:fly={{
       x: '-50vw',
@@ -53,13 +54,19 @@
     </div>
     {#each navRoutes as route}
       <a
+        class="text-xl p-2"
         href={route.path}
         on:click={() => (show = false)}
-        class={`${$page.url.pathname.includes(route.path) && ''}`}
+        class:active={$page.url.pathname.includes(route.path)}
       >
         {route.name}
       </a>
     {/each}
+    <div class="flex justify-center mt-auto">
+      <a class="p-1 scale-150" href="/" on:click={() => (show = false)}>
+        <HomeIcon />
+      </a>
+    </div>
   </nav>
 {/if}
 
@@ -79,6 +86,6 @@
 
 <style lang="postcss">
   .active {
-    @apply bg-black;
+    @apply bg-surface-20 underline;
   }
 </style>

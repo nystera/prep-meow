@@ -15,7 +15,7 @@
 <svelte:window bind:innerWidth />
 
 <header
-  class="flex sticky top-0 bg-surface pt-5"
+  class="flex sticky top-0 bg-surface py-5"
   bind:clientHeight={headerHeight}
 >
   <div
@@ -71,11 +71,11 @@
 
 <div class="flex gap-5">
   <nav
-    class="hidden laptop:flex laptop:flex-col flex-shrink-0 laptop:sticky h-[70vh] w-0 opacity-0 scroll-mt-5
-				border-2 border-primary rounded-r-lg shadow-md shadow-primary mt-5
+    class="hidden laptop:flex laptop:flex-col flex-shrink-0 laptop:sticky h-[70vh] w-0 opacity-0
+				border-2 border-primary rounded-r-lg shadow-md shadow-primary
 				transition-all ease-out duration-200"
     class:expanded={isSidebarOpened}
-    style={`top: calc(${headerHeight}px + 1.25rem);`}
+    style={`top: calc(${headerHeight}px);`}
   >
     {#each navRoutes as route}
       {#if isSidebarOpened}

@@ -11,6 +11,9 @@
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write ."
 	},
+	"dependencies": {
+		"tailwind-scrollbar-hide": "^1.1.7"
+	},
 	"devDependencies": {
 		"@iconify/json": "^2.2.95",
 		"@sveltejs/adapter-auto": "^2.0.0",
