@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-surface font-primary;
+}
+
 @font-face {
   font-family: 'SourceCodePro';
   src: url('/fonts/SourceCodePro-Regular.ttf') format('truetype');
