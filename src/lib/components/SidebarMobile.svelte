@@ -30,7 +30,7 @@
 
 {#if show}
   <nav
-    class="fixed top-0 left-0 h-full w-2/3 z-10 bg-surface
+    class="fixed top-0 left-0 h-full w-2/3 z-50 bg-surface
     shadow-2xl shadow-primary border-y-2 border-r-2 rounded-r-2xl border-primary
     flex flex-col py-8 overflow-y-scroll scrollbar-hide"
     use:trapFocus
@@ -76,7 +76,7 @@
 -->
 {#if show}
   <button
-    class="fixed top-0 right-0 h-full w-full backdrop-blur bg-black/20 z-0"
+    class="fixed top-0 right-0 h-full w-full backdrop-blur bg-black/20 z-20"
     on:click={() => (show = false)}
     in:fade={{ duration: ANIMIATON_DURATION }}
     out:fade={{ duration: ANIMIATON_DURATION }}

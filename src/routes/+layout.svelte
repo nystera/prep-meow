@@ -69,7 +69,7 @@
   </div>
 </header>
 
-<div class="flex gap-5">
+<div class="flex">
   <nav
     class="hidden laptop:flex laptop:flex-col flex-shrink-0 laptop:sticky h-[70vh] w-0 opacity-0
 				border-2 border-primary rounded-r-lg shadow-md shadow-primary

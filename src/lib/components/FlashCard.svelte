@@ -1,8 +1,11 @@
-<script>
-  // export let question;
+<script lang="ts">
+  export let question: string;
   // export let answer;
 </script>
 
 <div
-  class="bg-accent w-full max-w-7xl min-h-[50vh] border-primary border-2 rounded-xl"
-/>
+  class="bg-secondary w-full max-w-7xl h-full border-primary border-2 rounded-xl
+  mx-auto my-0"
+>
+  {question}
+</div>
