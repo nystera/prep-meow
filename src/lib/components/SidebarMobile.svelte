@@ -21,7 +21,6 @@
   }
 
   onMount(() => {
-    console.log('route is', $page.route);
     window.addEventListener('keydown', closeOnEscape);
     return () => {
       window.removeEventListener('keydown', closeOnEscape);

@@ -89,9 +89,8 @@
       {/if}
     {/each}
   </nav>
-  <div class="">
-    <slot />
-  </div>
+
+  <slot />
 </div>
 
 <SidebarMobile bind:show={isSidebarMobileOpened} />
