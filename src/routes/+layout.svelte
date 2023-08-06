@@ -90,7 +90,9 @@
     {/each}
   </nav>
 
-  <slot />
+  <div class="flex w-full px-5">
+    <slot />
+  </div>
 </div>
 
 <SidebarMobile bind:show={isSidebarMobileOpened} />

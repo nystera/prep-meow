@@ -18,6 +18,14 @@ export function GET() {
     {
       id: 3,
       title: 'Flash 3'
+    },
+    {
+      id: 4,
+      title: 'Flash 4'
+    },
+    {
+      id: 5,
+      title: 'Flash 5'
     }
   ]);
 }
