@@ -56,7 +56,7 @@
         class="text-xl p-2"
         href={route.path}
         on:click={() => (show = false)}
-        class:active={$page.url.pathname.includes(route.path)}
+        class:active={$page.url.pathname === route.path}
       >
         {route.name}
       </a>

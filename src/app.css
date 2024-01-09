@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
 body {
   @apply bg-surface font-primary;
+  @apply overflow-x-hidden;
 }
 
 @font-face {
@@ -21,4 +27,9 @@ body {
   font-family: 'SourceCodePro';
   font-weight: 300;
   src: url('/fonts/SourceCodePro-Light.ttf') format('truetype');
+}
+
+/* hide all scrollbars */
+::-webkit-scrollbar {
+  display: none;
 }

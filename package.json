@@ -12,6 +12,7 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"dependencies": {
+		"tailwind-merge": "^2.2.0",
 		"tailwind-scrollbar-hide": "^1.1.7"
 	},
 	"devDependencies": {
