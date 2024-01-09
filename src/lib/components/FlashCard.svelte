@@ -56,6 +56,7 @@
   class={twMerge(
     `bg-surface-20 border-2 border-primary rounded-xl
     h-full w-full`,
+    index !== 0 ? 'brightness-75' : '',
     index === 0 ? 'cursor-pointer' : '',
     className
   )}
